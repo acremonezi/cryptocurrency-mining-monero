@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+
+# -----------------------------------------------------------------
+  monero_mining:
+    image: ubuntu:latest
+    restart: unless-stopped
+    container_name: monero_mining
