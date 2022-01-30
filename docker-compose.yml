@@ -3,6 +3,17 @@ services:
 
 # -----------------------------------------------------------------
   monero_mining:
-    image: ubuntu:latest
-    restart: unless-stopped
+    build:
+      dockerfile: Dockerfile
+      context: ./
+  
     container_name: monero_mining
+    image: monero_mining:1.0.0
+    restart: unless-stopped  
+    
+    command: tail -F anything
+
+    #command: cd xmrig/build && ./xmrig
+
+    volumes:
+      - ./config.json:/src/xmrig/build/config.json:ro

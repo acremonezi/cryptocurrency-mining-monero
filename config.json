@@ -1,0 +1,32 @@
+{
+    "autosave": true,
+    "donate-level": 1,
+    "randomx": {
+        "init": -1,
+        "init-avx2": 1,
+        "mode": "fast",
+        "1gb-pages": false,
+        "rdmsr": false,
+        "wrmsr": false,
+        "cache_qos": false,
+        "numa": true,
+        "scratchpad_prefetch_mode": 1
+    },
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "max-threads-hint": 100,
+        "asm": "intel"
+    },
+    "opencl": false,
+    "cuda": false,
+    "pools": [
+        {
+            "coin": "monero",
+            "url": "gulf.moneroocean.stream:10128",
+            "user": "41kQLbaDtniiUZ2pPM5WpERxUqxbGP9yHFfX84wA9TqT7KvYp4ELmk7a1cLimXyM3G9w6pgusK2DaATn7Nn9KMAGELGopfs",
+            "tls": false,
+            "pass": "alcides_desktop"
+        }
+    ]
+}
