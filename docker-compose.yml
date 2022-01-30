@@ -17,3 +17,4 @@ services:
 
     volumes:
       - ./config.json:/src/xmrig/build/config.json:ro
+      - ./crontab:/etc/cron.d
